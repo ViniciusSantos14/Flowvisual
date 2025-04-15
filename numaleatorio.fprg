@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="numaleatorio"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-01 01:52:34 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI1OzIwMjUtMDQtMDE7IjAxOjQzOjMwICI7MjYxMA=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI1OzIwMjUtMDQtMDE7IjAxOjUyOjM0ICI7MTsyNzIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tentativa, numAleatorio" type="Integer" array="False" size=""/>
+            <assign variable="numAleatorio" expression="random(10)"/>
+            <output expression="&quot;Tente adivinhar um n&#250;mero entre 0 e 10&quot;" newline="True"/>
+            <input variable="tentativa"/>
+            <if expression="tentativa == numAleatorio">
+                <then>
+                    <output expression="&quot;Parab&#233;ns! Voc&#234; acertou o n&#250;mero aleat&#243;rio&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Que pena, voc&#234; errou&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
